@@ -1,0 +1,299 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f7ff;
+  color: #222;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.about-section {
+  max-width: 900px;       /* limits the width for better readability */
+  margin: 0 auto;         /* centers the section */
+  padding: 40px 20px;     /* spacing around the section */
+  text-align: justify;     /* justifies the text neatly */
+  line-height: 1.8;        /* makes it easier to read */
+  font-size: 18px;         /* readable font size */
+  color: #333;             /* dark text color for contrast */
+}
+
+.about {
+  text-align: center;      /* center the heading */
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #222;
+}
+
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a237e;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1a237e;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3949ab;
+}
+
+/* SECTIONS */
+.section {
+  padding: 70px 50px;
+  text-align: center;
+}
+
+/* HOME SECTION */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e8eaf6;
+  padding: 80px 50px;
+  border-radius: 15px;
+}
+
+.home-content {
+  width: 50%;
+}
+
+.name-highlight {
+  color: #1a237e;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 10px 0 20px;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #1a237e;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #303f9f;
+}
+
+.home-image img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.skills-box {
+  width: 48%;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.skills-box h3 {
+  margin-bottom: 15px;
+  color: #1a237e;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-card {
+  background: #e8eaf6;
+  color: #1a237e;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0px 4px 12px rgba(26, 35, 126, 0.15);
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  background: #1a237e;
+  color: white;
+  transform: translateY(-4px);
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project-box {
+  width: 48%;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-4px);
+}
+
+.project-title {
+  font-size: 22px;
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+.project-list {
+  margin-top: 15px;
+  padding-left: 20px;
+  line-height: 1.9;
+}
+
+/* CONTACT FORM */
+.contact-form {
+  width: 60%;
+  max-width: 600px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #1a237e;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.contact-form button:hover {
+  background: #303f9f;
+}
+/* CERTIFICATIONS + ACHIEVEMENTS SECTION */
+.cert-section {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.cert-heading {
+  font-size: 32px;
+  color: #1a237e;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Container for all 3 cards */
+.cert-achieve-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Individual Card Box */
+.cert-card {
+  width: 30%;
+  min-width: 280px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 12px 30px rgba(26, 35, 126, 0.2);
+}
+
+.cert-title {
+  font-size: 22px;
+  color: #1a237e;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.cert-card ul {
+  padding-left: 18px;
+  line-height: 1.8;
+  color: #333;
+  font-size: 16px;
+}
+
+.cert-card li {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+/* Custom Bullet */
+.cert-card li::before {
+  content: "•";
+  color: #1a237e;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  left: -15px;
+}
